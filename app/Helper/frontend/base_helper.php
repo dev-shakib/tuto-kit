@@ -11,6 +11,13 @@ if(!function_exists('logo')){
            return $html;
     }
  }
+ if(!function_exists('fevicon')){
+    function fevicon(){
+           $img = Option::where('type','fevicon')->first();
+            $data = $img->logoimg;
+            return $data;
+    }
+ }
  if(!function_exists('menuBar')){
     function menuBar(){
 
@@ -30,11 +37,11 @@ if(!function_exists('customCSS')){
 }
 if(!function_exists('html_Header')){
     function html_Header(){
-        
+
     }
 }
 if(!function_exists('html_footer')){
     function html_footer(){
-        
+
     }
 }

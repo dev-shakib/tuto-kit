@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!--Favicon-->
-    <link rel="icon" type="image/png" href="{{ asset('assets/images/default/favicon.png')}}" />
+    <link rel="icon" type="image/png" href="{{ asset('/images/logo/'. fevicon())}}" />
 
     <!--Bootstrap-->
     <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/bootstrap.min.css')}}">

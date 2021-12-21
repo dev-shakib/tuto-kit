@@ -7,12 +7,12 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1 class="m-0">Class Page</h1>
+            <h1 class="m-0">Course Page</h1>
           </div><!-- /.col -->
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item active">Class</li>
+              <li class="breadcrumb-item active">Course</li>
             </ol>
           </div><!-- /.col -->
         </div><!-- /.row -->
@@ -32,11 +32,11 @@
                             </ul>
                         </div>
                     @endif
-                
+
             </div>
             <div class="card">
               <div class="card-header">
-                <button id="create" class="btn btn-primary">Create Class</button>
+                <button id="create" class="btn btn-primary">Create Course</button>
               </div>
               <!-- /.card-header -->
               <div class="card-body">
@@ -70,11 +70,11 @@
               </div>
             </div>
 
-  
-            
+
+
             <div class="card">
               <div class="card-header">
-                <button id="create_subject" class="btn btn-primary">Create Subject</button>
+                <button id="create_subject" class="btn btn-primary">Create Lesson</button>
               </div>
               <!-- /.card-header -->
               <div class="card-body">
