@@ -14,6 +14,10 @@
         <input type="file" name="image" class="form-control" id="exampleInputFile">
     </div>
     <div class="form-group">
+        <label for="exampleInputFile">Course Price</label>
+        <input type="text" name="price" class="form-control" id="" placeholder="$00" value="{{ $class->price }}">
+     </div>
+    <div class="form-group">
         <div class="custom-control custom-switch custom-switch-off-danger custom-switch-on-success">
          <input type="checkbox"  name="status" class="custom-control-input" id="customSwitch3" <?php echo $class->status ? 'checked' : '' ?>>
          <label class="custom-control-label"  for="customSwitch3">Status</label>

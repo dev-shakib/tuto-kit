@@ -1,0 +1,8 @@
+1. navbar : Themes/Storefront/views/public/layout/header.blade.php
+2. topnav : Themes/Storefront/views/public/layout/top_nav.blade.php
+3. slider : Themes/Storefront/views/public/home/sections/slider.blade.php
+4. primary menu : Themes/Storefront/views/public/layout/navigation/primary_menu.blade.php
+5. sidebar menu : Themes/Storefront/views/public/layout/navigation/menu.blade.php
+
+Themes/Storefront/resources/assets/public/js/components
+

@@ -12,6 +12,7 @@ class Course extends Model
         'title',
         'description',
         'img',
+        'price',
         'status',
     ];
     public function subject(){

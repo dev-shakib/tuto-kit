@@ -39,7 +39,7 @@
                         <?php $arr = json_decode($user->expertIn??[000,000],true); ?>
                         @endif
                         @foreach ($class as $row)
-                            <option value="{{ $row->id }}"  <?php echo in_array($row->id,(Array)$arr) ? 'selected' : '' ; ?>>{{ $row->title }}</option>
+                            <option value="{{ $row->id }}"  <?php echo in_array($row->id,(Array)@$arr) ? 'selected' : '' ; ?>>{{ $row->title }}</option>
                         @endforeach
                     </select>
                 </div>

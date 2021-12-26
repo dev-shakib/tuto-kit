@@ -47,6 +47,7 @@
                         <th>Class Name</th>
                         <th>Class img</th>
                         <th>Total Subjects</th>
+                        <th>Price</th>
                         <th>Status</th>
                         <th>Action</th>
                       </tr>
@@ -59,6 +60,7 @@
                       <!-- <td><img src="{{ asset('images/'.$row->img) }}" alt=""  width="90px" height="70px"></td> -->
                       <td></td>
                       <td>{{ count($row->subject) }}</td>
+                      <td>{{ $row->price }} $</td>
                       <td>
                         {{ $row->status ? 'Open' : 'Off' ; }}
                       </td>

@@ -31,6 +31,7 @@ class ClassController extends Controller
         $r->validate([
             'title' => 'required',
             'image' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+            'price' => 'required'
         ]);
         $data = $r->all();
         $imageName = time().'-'.rand(1,99999).'.'.$r->image->extension();
@@ -40,10 +41,11 @@ class ClassController extends Controller
             'title' => $data['title'],
             'description' => $data['description'],
             'img' =>  $imageName,
+            'price' => $data['price']
         ];
         if(isset($data['status']))
         $data['status'] = $data['status'] == 'on' ? 1 : 0;
-    
+
         Course::create($data);
         return redirect()->back();
     }
@@ -66,6 +68,7 @@ class ClassController extends Controller
             "title" => $r->title,
             "description" => $r->description,
             'status' => $r->status == 'on' ? 1 : 0,
+            'price' => $r['price']
         ];
         if(isset($r->image)){
             $imageName = time().'-'.rand(1,99999).'.'.$r->image->extension();
